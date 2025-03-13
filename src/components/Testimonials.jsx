@@ -22,9 +22,9 @@ const Testimonials = () => {
                 spaceBetween={50}
                 centeredSlides={true}
                 breakpoints={{
-                    640:{slidesPerView:1},
-                    768:{slidesPerView:2},
-                    1024:{slidesPerView:3},
+        300:{slidesPerView:1},
+        768:{slidesPerView:2},
+        1024:{slidesPerView:3},
                 }}
                 onSlideChange={(cur) => setActive(cur.realIndex)}
                 loop={true}
@@ -39,7 +39,7 @@ const Testimonials = () => {
                 modules={[Autoplay, Pagination, Navigation]} >
                 {Data.map((data, index) => (
                     <SwiperSlide>
-                        <div className={`shadow-xl ${active === index ? 'scale-110' : 'scale-75'} my-10 rounded-xl bg-[#fafafa] py-10 px-5 h-[450px] w-[500px] `} >
+                        <div className={`shadow-xl ${active === index ? 'scale-100' : 'scale-75'} my-10 rounded-xl bg-[#fafafa] py-10 px-5 h-[400px] w-[450px] `} >
                             <div className='flex itemx-center my-5 ' >
                                 <div className='w-16  mx-2 ' ><img className='rounded-full' src={data.pic} alt="" /></div>
                                 <div>
